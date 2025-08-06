@@ -1,0 +1,33 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class FibonacciSumRange {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        int m = scanner.nextInt();
+        if (n < 1 || n > 20 || m < 1 || m > 20) {
+            System.out.println("Invalid Input");
+        } else {
+            int maxIndex = Math.max(n, m);
+            double[] fib = new double[maxIndex + 1]; // 1-based index
+            fib[1] = 0;
+            if (maxIndex > 1) {
+                fib[2] = 1;
+            }
+            for (int i = 3; i <= maxIndex; i++) {
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+            double sum = 0;
+            for (int i = n; i <= m; i++) {
+                sum += fib[i];
+            }
+            System.out.println("The Sum of Fibonacci value is " + sum);
+        }
+        scanner.close();
+    }
+}
