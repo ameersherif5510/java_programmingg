@@ -1,0 +1,26 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long number = scanner.nextLong(); 
+        if (number <= 0 || number > 1000000000) {
+            System.out.println("Invalid Input");
+        } else {
+            long reversed = 0;
+            long temp = number;
+            while (temp > 0) {
+                int digit = (int)(temp % 10);
+                reversed = reversed * 10 + digit;
+                temp /= 10;
+            }
+            System.out.println(reversed);
+        }
+        scanner.close();
+    }
+}
