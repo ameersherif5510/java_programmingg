@@ -5,18 +5,14 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.Scanner;
 
-public class PlacementEligibility {
+public class main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String name = scanner.nextLine();
         int arrears = scanner.nextInt();
         int cgpa = scanner.nextInt();
-
         System.out.println("Name of the Student:" + name);
-
         boolean isEligible = false;
-
         if (arrears == 1 && cgpa > 70) {
             isEligible = true;
         } else if ((arrears == 1 || arrears == 2) && cgpa > 75) {
@@ -27,7 +23,6 @@ public class PlacementEligibility {
         } else {
             System.out.println(name + " is Not Eligible for Placement");
         }
-
         scanner.close();
     }
 }
