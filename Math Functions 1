@@ -5,20 +5,17 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.Scanner;
 
-public class MathFunctions {
+public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         float floatValue = scanner.nextFloat();
         int squareValue = scanner.nextInt();  
         int base = scanner.nextInt();          
         int power = scanner.nextInt();          
-
         int floorValue = (int)Math.floor(floatValue);
         int ceilValue = (int)Math.ceil(floatValue);
         int sqrtValue = (int)Math.sqrt(squareValue);
         int powValue = (int)Math.pow(base, power);
-
         System.out.println(floorValue);
         System.out.println(ceilValue);
         System.out.println(sqrtValue);
