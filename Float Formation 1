@@ -2,20 +2,14 @@ import java.io.*;
 import java.util.*;
 import java.util.Scanner;
 
-public class FloatFormatter {
+public class main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
         float value = scanner.nextFloat();
-
         System.out.printf("%.6f\n", value);
-        
         System.out.printf("%.4f\n", value);
-        
         System.out.printf("%.2f\n", value);
-        
         System.out.printf("%d\n", Math.round(value));
-
         scanner.close();
     }
 }
