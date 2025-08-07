@@ -1,0 +1,20 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        long num = scanner.nextLong();
+        if (num >= 1 && num <= 10000000) {
+            int digitCount = String.valueOf(num).length();
+            System.out.println("The count of the given integer is: " + digitCount);
+        } else {
+            System.out.println("Enter a Valid Input");
+        }
+        scanner.close();
+    }
+}
