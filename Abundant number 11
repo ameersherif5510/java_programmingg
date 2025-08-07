@@ -5,7 +5,7 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.Scanner;
 
-public class AbundantNumberChecker {
+public class main{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
