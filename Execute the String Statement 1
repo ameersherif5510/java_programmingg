@@ -5,16 +5,11 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.Scanner;
 
-public class Greeting {
+public class solution{
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
-        // Read the entire line as input
         String input = scanner.nextLine();
-
-        // Print the formatted output
         System.out.println("Hai " + input + "!    Welcome to Programming Language...");
-
         scanner.close();
     }
 }
