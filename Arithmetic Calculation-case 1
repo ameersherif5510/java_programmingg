@@ -5,14 +5,12 @@ import java.math.*;
 import java.util.regex.*;
 import java.util.Scanner;
 
-public class Calculator {
+public class solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-
         int num1 = sc.nextInt();
         int num2 = sc.nextInt();
         char operator = sc.next().charAt(0);
-
         double result;
         switch (operator) {
             case '+':
@@ -46,7 +44,6 @@ public class Calculator {
             default:
                 System.out.println("Invalid Input");
         }
-
         sc.close();
     }
 }
