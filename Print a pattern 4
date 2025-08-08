@@ -6,8 +6,8 @@ import java.util.regex.*;
 
 public class main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         if (n < 0 || n > 9) {
             System.out.println("Invalid Input");
             return;
@@ -16,10 +16,9 @@ public class main {
         for (int i = 1; i <= n; i++) { 
             for (int j = 1; j <= i; j++) {  
                 System.out.print(ch + " ");
-                ch++;
-            }
+                ch++;}
             System.out.println();  
         }
-        scanner.close();
+        sc.close();
     }
 }
