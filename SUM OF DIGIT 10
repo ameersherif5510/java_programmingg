@@ -4,21 +4,21 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class solution {
+public class main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int number = scanner.nextInt();
-        if (Math.abs(number) < 100) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if (Math.abs(num) < 100) {
             System.out.println("Invalid Input");
         } else {
             int sum = 0;
-            int temp = Math.abs(number); 
+            int temp = Math.abs(num); 
             while (temp > 0) {
                 sum += temp % 10;
                 temp /= 10;
             }
             System.out.println("Sum of digit is " + sum);
         }
-        scanner.close();
+        sc.close();
     }
 }
