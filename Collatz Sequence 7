@@ -6,21 +6,19 @@ import java.util.regex.*;
 
 public class main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number");
-        int n = scanner.nextInt();
+        int n = sc.nextInt();
         int count = 0;
         System.out.println(n); 
         while (n != 1) {
             if (n % 2 == 0) {
                 n = n / 2;
             } else {
-                n = 3 * n + 1;
-            }
+                n = 3 * n + 1;}
             System.out.println(n);
-            count++;
-        }
+            count++;}
         System.out.println("count:" + count);
-        scanner.close();
+        sc.close();
     }
 }
