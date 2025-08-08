@@ -4,29 +4,27 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
-public class solution{
+public class main{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        int m = scanner.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
         if (n < 1 || n > 20 || m < 1 || m > 20) {
             System.out.println("Invalid Input");
         } else {
             int maxIndex = Math.max(n, m);
-            double[] fib = new double[maxIndex + 1]; // 1-based index
+            double[] fib = new double[maxIndex + 1];
             fib[1] = 0;
             if (maxIndex > 1) {
-                fib[2] = 1;
-            }
+                fib[2] = 1;}
             for (int i = 3; i <= maxIndex; i++) {
-                fib[i] = fib[i - 1] + fib[i - 2];
-            }
+                fib[i] = fib[i - 1] + fib[i - 2];}
             double sum = 0;
             for (int i = n; i <= m; i++) {
                 sum += fib[i];
             }
             System.out.println("The Sum of Fibonacci value is " + sum);
         }
-        scanner.close();
+        sc.close();
     }
 }
