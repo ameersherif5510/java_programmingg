@@ -6,8 +6,8 @@ import java.util.regex.*;
 
 public class main{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.next();
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
         if (input.length() < 2) {
             System.out.println("STDOUT");
         } else {
@@ -15,6 +15,6 @@ public class main{
             char secondDigit = input.charAt(1);
             System.out.println("" + secondDigit + firstDigit);
         }
-        scanner.close();
+        sc.close();
     }
 }
