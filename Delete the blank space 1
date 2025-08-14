@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class solution{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("");
+        String input = scanner.nextLine();
+        String result = input.replaceAll(" ", "");
+        System.out.println(result);
+        scanner.close();
+    }
+}
